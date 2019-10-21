@@ -27,8 +27,7 @@ function twelveHourTimeFormat() {
     second: 'numeric',
     hour12: btn.innerHTML != '12 Hour'
   });
-
-  document.getElementById('time').innerHTML = time;
+  showTime.textContent = time;
 }
 twelveHourTimeFormat();
 setInterval(twelveHourTimeFormat, 1000);
