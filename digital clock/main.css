@@ -1,0 +1,44 @@
+.dateContainer {
+  width: 300px;
+  background-color: rgb(68, 69, 70);
+  margin: 20px auto;
+  text-align: center;
+  font-size: 30px;
+  /* font-family: 'Orbitron', sans-serif; */
+  /* font-family: 'Major Mono Display', monospace; */
+  font-family: 'VT323', monospace;
+  border-radius: 8px;
+  padding: 10px 0;
+  position: relative;
+}
+
+#time {
+  color: aquamarine;
+  margin-left: 10px;
+}
+
+#amPM {
+  color: coral;
+  font-size: 20px;
+}
+
+#date,
+#year {
+  color: rgb(22, 182, 235);
+}
+
+#month {
+  color: lightgreen;
+}
+
+button {
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: brown;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

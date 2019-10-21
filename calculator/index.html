@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" name="form">
+        <div class="display">
+          <input
+            type="text"
+            class="text"
+            name="displayResult"
+            value="0"
+            maxlength="16"
+            autocomplete="new-password"
+            id="result"
+            onkeypress="return blockKbd(event)"
+            disabled
+          />
+        </div>
+        <div class="buttons">
+          <div class="row">
+            <input
+              type="button"
+              name="hidden"
+              value="CE"
+              onclick="delLastValue()"
+            />
+            <input type="button" name="square" value="2x" onclick="Square()" />
+            <input
+              type="button"
+              name="oneFourth"
+              value="1/x"
+              onclick="OneFourth()"
+            />
+            <input
+              type="button"
+              name="plusMinus"
+              value="+/-"
+              onclick="sign()"
+            />
+          </div>
+          <div class="row">
+            <input type="button" name="del" value="←" onclick="deleteIt()" />
+            <input type="button" name="clear" value="C" onclick="clearall()" />
+            <input
+              type="button"
+              name="sRoot"
+              value="√"
+              onclick="squareRoot()"
+            />
+
+            <input
+              class="operations"
+              type="button"
+              id="modules"
+              value="%"
+              onclick="percentB()"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              name="seven"
+              value="7"
+              onClick="calcNumbers(value)"
+            />
+            <input
+              type="button"
+              name="eight"
+              value="8"
+              onClick="calcNumbers(value)"
+            />
+            <input
+              type="button"
+              name="nine"
+              value="9"
+              onClick="calcNumbers(value)"
+            />
+
+            <input
+              class="operations"
+              type="button"
+              id="divide"
+              value="/"
+              onclick="divB()"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              name="four"
+              value="4"
+              onClick="calcNumbers(value)"
+            />
+            <input
+              type="button"
+              name="five"
+              value="5"
+              onClick="calcNumbers(value)"
+            />
+            <input
+              type="button"
+              name="six"
+              value="6"
+              onClick="calcNumbers(value)"
+            />
+
+            <input
+              class="operations"
+              type="button"
+              id="multi"
+              value="*"
+              onclick="multiB()"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              name="one"
+              value="1"
+              onClick="calcNumbers(value)"
+            />
+            <input
+              type="button"
+              name="two"
+              value="2"
+              onClick="calcNumbers(value)"
+            />
+            <input
+              type="button"
+              name="three"
+              value="3"
+              onClick="calcNumbers(value)"
+            />
+
+            <input
+              class="operations"
+              type="button"
+              id="subtract"
+              value="-"
+              onclick="subB()"
+            />
+          </div>
+          <div class="row">
+            <input
+              type="button"
+              name="zero"
+              value="0"
+              onClick="calcNumbers(value)"
+            />
+            <input type="button" name="dot" value="." onClick="decimalCalc()" />
+            <input
+              type="button"
+              name="equal"
+              value="="
+              onClick="fullResult()"
+            />
+
+            <input
+              class="operations"
+              type="button"
+              id="addition"
+              value="+"
+              onclick="addB()"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
